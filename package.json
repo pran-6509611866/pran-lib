@@ -10,7 +10,13 @@
     "url": "https://github.com/pran-6509611866/pran-lib"
   },
   "scripts": {
-    "build": "tsup"
+    "build": "tsup",
+    "test": "npm run build && node test/test.js",
+    "test:ts": "npm run build && npx ts-node test/test.ts",
+    "test:npm": "node scripts/test-npm-package.js",
+    "example": "npm run build && node examples/example.js",
+    "example:ts": "npm run build && npx ts-node examples/example.ts",
+    "dev": "tsup --watch"
   },
   "keywords": [
     "pran"
@@ -18,6 +24,7 @@
   "author": "underctrl",
   "license": "MIT",
   "devDependencies": {
+    "ts-node": "^10.9.2",
     "tsup": "^8.5.0",
     "typescript": "^5.8.3"
   }
