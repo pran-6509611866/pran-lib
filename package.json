@@ -1,0 +1,24 @@
+{
+  "name": "@prantin/pran-lib",
+  "version": "0.0.1",
+  "description": "Test package",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "honepage": "https://google.com",
+  "repository": {
+    "url": "https://github.com/pran-6509611866/pran-packet-library"
+  },
+  "scripts": {
+    "build": "tsup"
+  },
+  "keywords": [
+    "pran"
+  ],
+  "author": "underctrl",
+  "license": "MIT",
+  "devDependencies": {
+    "tsup": "^8.5.0",
+    "typescript": "^5.8.3"
+  }
+}
